@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0%;
+}
+
+
+.accueil{
+    min-height: 100vh;
+    background-color: #2a2a2a;
+}
+.flexAcceuil{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.accueilTitre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #ffff;
+    margin: 0;
+    padding: 5vh;
+}
+.h1{
+    margin: 0;
+    font-size: 12vw;
+}
+.h2{
+    margin: 0;
+    font-size: 3.5vw;
+    margin-left: 5vh;
+}
+.imgAcceuil{
+    max-height: 75vh;
+    margin: 1vh;
+}
+
+.projets{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.flexProjets{
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+}
+.titre{
+    margin: 0;
+    z-index: 3;
+    color: #FFFFFF;
+    font-size: 70;
+    justify-content: center;
+    background-color: #00000078;
+    padding: 1.3vh;
+    border-radius: 1.7vh;
+    margin-bottom: 0.5vh;
+}
+.objet{
+    width: 100%;
+}
+.bouton{
+    font-size: 20;
+    color: #ffffff;
+    background-color: #0000005d;
+    padding: 1.3vh;
+    border-radius: 1.7vh;
+    text-decoration: none;
+    border-style: none;
+    cursor: pointer;
+}
+.bouton:hover{
+    background-color: #0000008e;
+}
+
+
+.imgpro{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.divArrow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrow{
+    z-index: 99999;
+    max-height: 15vh;
+}
+
+
+
+
+.project-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ffffff;
+}
+.project {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.project.active {
+    opacity: 1;
+}
+
+.button-arrow {
+    margin: 2.5vh;
+    background-color: #00000075;
+    border-style: none;
+    border-radius: 25%;
+    cursor: pointer;
+}
+.button-arrow:hover{
+    border-radius: 25%;
+    background-color: #2a2a2a9e;
+}
+
+
+
+
+
+
+.dots {
+    z-index: 9999;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+.dot {
+    width: 2.5vh;
+    height: 2.5vh;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background-color: #333;
+    transform: scale(1.2);
+}
+

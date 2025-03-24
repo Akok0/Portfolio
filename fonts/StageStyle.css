@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 5vh;
+    width: 100%;
+    z-index: 9999;
+    background-color: #ffffffba;
+}
+.headerimg{
+    height: 5vh;
+}
+
+.secPhoto{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.divPhoto{
+    background-color: #0000;
+    position: relative;
+    flex: 1 1 0;
+    margin: 0;
+    border-color: #000000;
+    border-style: solid; 
+}
+.divPhoto:hover{
+    flex-grow: 2;
+}
+
+.objet{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width : 1000px){
+    .secPhoto{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .divPhoto{
+        background-color: #0000;
+        position: relative;
+        width: 100%;
+        height: 45%;
+        margin: 0;
+    }
+}
