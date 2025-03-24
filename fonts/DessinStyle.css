@@ -92,5 +92,8 @@ header{
     .divArrow{
         display: none;
     }
+    .link{
+        position: relative;
+    }
 }
 
