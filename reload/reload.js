@@ -1,8 +1,4 @@
-fetch("/version.txt")
-  .then(response => response.text())
-  .then(version => {
-    if (localStorage.getItem("site_version") !== version) {
-      localStorage.setItem("site_version", version);
-      location.reload(true);
-    }
-  });
+if (!sessionStorage.getItem("reloaded")) {
+  sessionStorage.setItem("reloaded", "true");
+  location.reload(true);
+}
