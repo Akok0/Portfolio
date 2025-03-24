@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    width: 350vw;
+    width: 100%;
 }
 
 header{
@@ -39,9 +39,6 @@ header{
 }
 
 @media (max-width : 1000px){
-    body{
-        width: 100%;
-    }
     .secObjet{
         display: flex;
         flex-direction: column;
