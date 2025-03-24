@@ -27,7 +27,6 @@ header{
     position: relative;
     height: 100vh;
     width: 100vh;
-    flex: 1 1 0;
 }
 .divObjet:hover{
     flex-grow: 1.3;
