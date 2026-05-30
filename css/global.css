@@ -1,0 +1,12 @@
+@layer variables, reset, base, components;
+
+@import "./variables.css" layer(variables);
+@import "./reset.css" layer(reset);
+@import "./base.css" layer(base);
+@import "../components/hero/style.css" layer(components);
+@import "../components/liste/style.css" layer(components);
+@import "../components/carrousel/style.css" layer(components);
+@import "../components/detail/style.css" layer(components);
+@import "../components/bento/style.css" layer(components);
+@import "../components/video/style.css" layer(components);
+@import "../components/footer/style.css" layer(components);

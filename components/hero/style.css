@@ -1,0 +1,45 @@
+.hero {
+  position: relative;
+  height: 120vh;
+  view-timeline-name: --hero-timeline;
+}
+
+.hero__title {
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(3rem, 6vw + 1rem, 8rem);
+  text-align: center;
+  color: var(--clr-white);
+}
+
+.hero__sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero__dot {
+  width: 50px;
+  height: 50px;
+  background-color: var(--clr-white);
+  border-radius: 50%;
+  animation: move-and-grow linear forwards;
+  animation-timeline: --hero-timeline;
+  animation-range: exit 0% exit 100%;
+}
+
+
+@keyframes move-and-grow {
+  0%   { transform: translateY(0) scale(1); }
+  20%  { transform: translateY(20vh) scale(1); }
+  40%  { transform: translateY(40vh) scale(5); }
+  60%  { transform: translateY(50vh) scale(10); }
+  80%  { transform: translateY(50vh) scale(50); }
+  100% { transform: translateY(50vh) scale(100); }
+}

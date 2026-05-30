@@ -1,0 +1,10 @@
+@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=sora@300&display=swap" rel="stylesheet');
+
+:root{
+    --ff-main : 'Tanker', 'Impact', sans-serif;
+    --ff-sec : 'Sora', 'Impact', sans-serif;
+    --clr-black: #0e0e0e;
+    --clr-white: #f4f7e8;
+
+}

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio : projet</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <script src="script.js" defer></script>
+  </head>
+<body>
+    <span id="cursorFollower" class="cursorFollower"></span>
+    <section class="content"></section>
+    <script type="module">
+        import { Detail } from "./components/detail/script.js";
+        import { DetailData } from "./data/detailData.js";
+        Detail.render(".content", DetailData);
+    </script>
+</body>
+</html>
