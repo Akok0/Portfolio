@@ -64,10 +64,13 @@
     }
   }
 .detail__images {
-  width: 50%;
+  width: 80%;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(4, 1fr); 
+  @media(min-width: 55em){
+    width: 50%;
+  }
 }
 
 .detail__imageLi {
