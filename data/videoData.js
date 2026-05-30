@@ -1,7 +1,7 @@
 const VideoData = [
     {
     id: 1,
-    image: "../asset/AStepInABetterWorld/cover.png",
+    image: "./asset/AStepInABetterWorld/cover.png",
   },
 ];
 

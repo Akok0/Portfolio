@@ -8,7 +8,7 @@ let DetailData = {
     secteurs :["design", "développement"],
     infos :["Figma", "HTML", "CSS", "Javascript"],
     images: [
-        "../asset/ciaokombucha/ciaoKombucha.gif", "../asset/ciaokombucha/menthMainT.png", "../asset/ciaokombucha/menthT.png", "../asset/ciaokombucha/dragonSecD.png", "../asset/ciaokombucha/infuD.png", "../asset/ciaokombucha/fermT.png", "../asset/ciaokombucha/filtreT.png"
+        "./asset/ciaokombucha/ciaoKombucha.gif", "./asset/ciaokombucha/menthMainT.png", "./asset/ciaokombucha/menthT.png", "./asset/ciaokombucha/dragonSecD.png", "./asset/ciaokombucha/infuD.png", "./asset/ciaokombucha/fermT.png", "./asset/ciaokombucha/filtreT.png"
     ],
     link: "https://www.behance.net/gallery/245125823/Ciao-Kombucha-redisign-web-UX-UI?platform=direct"
   },
@@ -21,7 +21,7 @@ let DetailData = {
     secteurs :["design", "développement"],
     infos :["HTML", "CSS", "Javascript"],
     images: [
-        "../asset/ombraSystems/ombraSystems.gif", "../asset/ombraSystems/T1.png", "../asset/ombraSystems/T2.png", "../asset/ombraSystems/D1.png"
+        "./asset/ombraSystems/ombraSystems.gif", "./asset/ombraSystems/T1.png", "./asset/ombraSystems/T2.png", "./asset/ombraSystems/D1.png"
     ],
     link: "https://etchegoyen-sae105.mmi-limoges.fr/OmbraSystems.html"
   },
@@ -34,7 +34,7 @@ let DetailData = {
     secteurs :["design"],
     infos :["Figma"],
     images: [
-        "../asset/davidLynch/davidLynch.gif", "../asset/davidLynch/blueVelvet.png", "../asset/davidLynch/twinPeak.png", "../asset//davidLynch/all.png"
+        "../asset/davidLynch/davidLynch.gif", "./asset/davidLynch/blueVelvet.png", "./asset/davidLynch/twinPeak.png", "./asset//davidLynch/all.png"
     ],
     link: "https://www.behance.net/malo_etchegoyen"
   },
@@ -47,7 +47,7 @@ let DetailData = {
     secteurs :["design", "développement"],
     infos :["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     images: [
-        "../asset/movietheque/movietheque.gif", "../asset/movietheque/T1.png", "../asset/movietheque/T2.png", "../asset/movietheque/recherche.png"
+        "../asset/movietheque/movietheque.gif", "./asset/movietheque/T1.png", "./asset/movietheque/T2.png", "./asset/movietheque/recherche.png"
     ],
     link: "https://etchegoyen-sae203.mmi-limoges.fr/app/index.html"
   }
@@ -63,7 +63,7 @@ let DetailData = {
     secteurs :["design"],
     infos :["Photoshop"],
     images: [
-        "../asset/medieval/dedication.png", "../asset/medieval/bravery.png"
+        "./asset/medieval/dedication.png", "./asset/medieval/bravery.png"
     ],
     link: "https://www.instagram.com/reel/DSx8JZ3DNhd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
 
@@ -76,7 +76,7 @@ let DetailData = {
     secteurs :["design"],
     infos :["Illustrator"],
     images: [
-      "../asset/stickers/illustrator/designWeb.png", "../asset/stickers/illustrator/creatif.png", "../asset/stickers/illustrator/dessin.png", "../asset/stickers/illustrator/ecoute.png", "../asset/stickers/illustrator/adaptabilité.png","../asset/stickers/illustrator/empathie.png", "../asset/stickers/illustrator/avatar.png"
+      "./asset/stickers/illustrator/designWeb.png", "./asset/stickers/illustrator/creatif.png", "./asset/stickers/illustrator/dessin.png", "./asset/stickers/illustrator/ecoute.png", "./asset/stickers/illustrator/adaptabilité.png","./asset/stickers/illustrator/empathie.png", "./asset/stickers/illustrator/avatar.png"
     ],
     link: ""
   },
@@ -88,7 +88,7 @@ let DetailData = {
     secteurs :["design"],
     infos :["Photoshop"],
     images: [
-        "../asset/happiness.png"
+        "./asset/happiness.png"
     ],
     link: "https://www.instagram.com/reel/DSsUtGpDG7m/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
 
@@ -101,7 +101,7 @@ let DetailData = {
     secteurs :["design"],
     infos :["Photoshop"],
     images: [
-        "../asset/BillieEilish/HTE.png", "../asset/BillieEilish/HMHAS.png"
+        "./asset/BillieEilish/HTE.png", "./asset/BillieEilish/HMHAS.png"
     ],
     link: "https://www.instagram.com/reel/DSnC0acDMso/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
 
@@ -114,7 +114,7 @@ let DetailData = {
     secteurs :["design"],
     infos :["Photoshop"],
     images: [
-        "../asset/stickers/photoshop/adaptabilité.jpg", "../asset/stickers/photoshop/dessin.jpg", "../asset/stickers/photoshop/creatif.jpg", "../asset/stickers/photoshop/perfectionniste.jpg", "../asset/stickers/photoshop/designWeb.jpg", "../asset/stickers/photoshop/ecoute.jpg", "../asset/stickers/photoshop/empathie.jpg", "../asset/stickers/photoshop/intégrationWeb.jpg",
+        "./asset/stickers/photoshop/adaptabilité.jpg", "./asset/stickers/photoshop/dessin.jpg", "./asset/stickers/photoshop/creatif.jpg", "./asset/stickers/photoshop/perfectionniste.jpg", "./asset/stickers/photoshop/designWeb.jpg", "./asset/stickers/photoshop/ecoute.jpg", "./asset/stickers/photoshop/empathie.jpg", "./asset/stickers/photoshop/intégrationWeb.jpg",
     ],
     link: ""
   },
@@ -128,7 +128,7 @@ let DetailData = {
       type: "projet étudiant",
       secteurs: ["production vidéo", "stop motion", "communication"],
       infos: ["Premiere Pro", "DaVinci Resolve", "Photoshop"],
-      images: ["../asset/AStepInABetterWorld/cover.png", "../asset/AStepInABetterWorld/storyboard1.jpg", "../asset/AStepInABetterWorld/storyboard2.jpg"],
+      images: ["./asset/AStepInABetterWorld/cover.png", "./asset/AStepInABetterWorld/storyboard1.jpg", "./asset/AStepInABetterWorld/storyboard2.jpg"],
       link: "https://youtu.be/eLX5izQ_IFc?si=azprGXkD79mQjrq7"
     }
   ]
