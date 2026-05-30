@@ -34,7 +34,7 @@ let DetailData = {
     secteurs :["design"],
     infos :["Figma"],
     images: [
-        "../asset/davidLynch/davidLynch.gif", "./asset/davidLynch/blueVelvet.png", "./asset/davidLynch/twinPeak.png", "./asset//davidLynch/all.png"
+        "./asset/davidLynch/davidLynch.gif", "./asset/davidLynch/blueVelvet.png", "./asset/davidLynch/twinPeak.png", "./asset/davidLynch/all.png"
     ],
     link: "https://www.behance.net/malo_etchegoyen"
   },
@@ -47,7 +47,7 @@ let DetailData = {
     secteurs :["design", "développement"],
     infos :["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     images: [
-        "../asset/movietheque/movietheque.gif", "./asset/movietheque/T1.png", "./asset/movietheque/T2.png", "./asset/movietheque/recherche.png"
+        "./asset/movietheque/movietheque.gif", "./asset/movietheque/T1.png", "./asset/movietheque/T2.png", "./asset/movietheque/recherche.png"
     ],
     link: "https://etchegoyen-sae203.mmi-limoges.fr/app/index.html"
   }
