@@ -16,7 +16,7 @@ Cards.format = function(data){
     for (let card of data){
         if(card.id < 7){
             let li = templateCard;
-            li = li.replaceAll("{{id}}", card.id).replaceAll("{{image}}", card.image).replaceAll("{{link}}", card.link);
+            li = li.replaceAll("{{id}}", card.id).replaceAll("{{image}}", card.image).replaceAll("{{link}}", card.link).replaceAll("{{title}}", card.title);
             htmlCard += li;
             total += 1;
         }

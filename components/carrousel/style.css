@@ -19,6 +19,7 @@
     font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
   }
   .carousel-section__btn {
+    padding: .5rem ;
     text-transform: uppercase;
     color: var(--clr-white);
     font-size: 1rem;
