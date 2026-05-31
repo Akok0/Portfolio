@@ -8,7 +8,7 @@ let DetailData = {
     secteurs :["design", "développement"],
     infos :["Figma", "HTML", "CSS", "Javascript"],
     images: [
-        "./asset/ciaokombucha/ciaoKombucha.gif", "./asset/ciaokombucha/menthMainT.jpg", "./asset/ciaokombucha/menthT.jpg", "./asset/ciaokombucha/dragonSecD.jpg", "./asset/ciaokombucha/infuD.jpg", "./asset/ciaokombucha/fermT.jpg", "./asset/ciaokombucha/filtreT.jpg"
+        "./asset/ciaoKombucha/ciaoKombucha.webp", "./asset/ciaoKombucha/menthMainT.jpg", "./asset/ciaoKombucha/menthT.jpg", "./asset/ciaoKombucha/dragonSecD.jpg", "./asset/ciaoKombucha/infuD.jpg", "./asset/ciaoKombucha/fermT.jpg", "./asset/ciaoKombucha/filtreT.jpg"
     ],
     link: "https://www.behance.net/gallery/245125823/Ciao-Kombucha-redisign-web-UX-UI?platform=direct"
   },
@@ -21,7 +21,7 @@ let DetailData = {
     secteurs :["design", "développement"],
     infos :["HTML", "CSS", "Javascript"],
     images: [
-        "./asset/ombraSystems/ombraSystems.gif", "./asset/ombraSystems/T1.jpg", "./asset/ombraSystems/T2.jpg", "./asset/ombraSystems/D1.jpg"
+        "./asset/ombraSystems/ombraSystems.webp", "./asset/ombraSystems/T1.jpg", "./asset/ombraSystems/T2.jpg", "./asset/ombraSystems/D1.jpg"
     ],
     link: "https://etchegoyen-sae105.mmi-limoges.fr/OmbraSystems.html"
   },
@@ -34,7 +34,7 @@ let DetailData = {
     secteurs :["design"],
     infos :["Figma"],
     images: [
-        "./asset/davidLynch/davidLynch.gif", "./asset/davidLynch/blueVelvet.jpg", "./asset/davidLynch/twinPeak.jpg", "./asset/davidLynch/all.jpg"
+        "./asset/davidLynch/davidLynch.webp", "./asset/davidLynch/blueVelvet.jpg", "./asset/davidLynch/twinPeak.jpg", "./asset/davidLynch/all.jpg"
     ],
     link: "https://www.behance.net/malo_etchegoyen"
   },
@@ -47,7 +47,7 @@ let DetailData = {
     secteurs :["design", "développement"],
     infos :["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     images: [
-        "./asset/movietheque/movietheque.gif", "./asset/movietheque/T1.jpg", "./asset/movietheque/T2.jpg", "./asset/movietheque/recherche.jpg"
+        "./asset/movietheque/movietheque.webp", "./asset/movietheque/T1.jpg", "./asset/movietheque/T2.jpg", "./asset/movietheque/recherche.jpg"
     ],
     link: "https://etchegoyen-sae203.mmi-limoges.fr/app/index.html"
   }
