@@ -1,7 +1,8 @@
 const VideoData = [
     {
     id: 1,
-    image: "./asset/AStepInABetterWorld/cover.png",
+    title: "A Step In A Better World",
+    image: "./asset/AStepInABetterWorld/cover.jpg",
   },
 ];
 

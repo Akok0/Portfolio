@@ -12,7 +12,7 @@ Video.format = function(data){
 
     for (let project of data){
         let li = templateVideo;
-        li = li.replaceAll("{{id}}", project.id).replaceAll("{{image}}", project.image);
+        li = li.replaceAll("{{id}}", project.id).replaceAll("{{title}}", project.title).replaceAll("{{image}}", project.image);
         htmlVideo += li;
     }
 
