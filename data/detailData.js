@@ -76,7 +76,7 @@ let DetailData = {
     secteurs :["design"],
     infos :["Illustrator"],
     images: [
-      "./asset/stickers/illustrator/designWeb.jpg", "./asset/stickers/illustrator/creatif.jpg", "./asset/stickers/illustrator/dessin.jpg", "./asset/stickers/illustrator/ecoute.jpg", "./asset/stickers/illustrator/adaptabilité.jpg","./asset/stickers/illustrator/empathie.jpg", "./asset/stickers/illustrator/avatar.jpg"
+      "./asset/stickers/illustrator/designWeb.png", "./asset/stickers/illustrator/creatif.png", "./asset/stickers/illustrator/dessin.png", "./asset/stickers/illustrator/ecoute.png", "./asset/stickers/illustrator/adaptabilité.png","./asset/stickers/illustrator/empathie.png", "./asset/stickers/illustrator/avatar.png"
     ],
     link: ""
   },
