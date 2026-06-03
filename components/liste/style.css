@@ -63,6 +63,7 @@
       }
       .project__menu {
         display: none;
+        aspect-ratio: 16/9;
       }
       .project__menu-floating {
         border: solid 2px var(--clr-white);
