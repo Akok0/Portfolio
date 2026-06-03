@@ -12,6 +12,7 @@
   font-size: clamp(3rem, 6vw + 1rem, 8rem);
   text-align: center;
   color: var(--clr-white);
+  z-index: 2;
 }
 
 .hero__sticky {
@@ -33,7 +34,11 @@
   animation-timeline: --hero-timeline;
   animation-range: exit 0% exit 100%;
 }
-
+@supports not (animation-timeline: view()) {
+  .hero__dot {
+    animation: none;
+  }
+}
 
 @keyframes move-and-grow {
   0%   { transform: translateY(0) scale(1); }
@@ -41,5 +46,5 @@
   40%  { transform: translateY(40vh) scale(5); }
   60%  { transform: translateY(50vh) scale(10); }
   80%  { transform: translateY(50vh) scale(50); }
-  100% { transform: translateY(50vh) scale(100); }
+  100% { transform: translateY(50vh) scale(50); }
 }
