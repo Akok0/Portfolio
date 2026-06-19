@@ -130,6 +130,16 @@ let DetailData = {
       infos: ["Premiere Pro", "DaVinci Resolve", "Photoshop"],
       images: ["./asset/AStepInABetterWorld/cover.jpg", "./asset/AStepInABetterWorld/storyboard1.jpg", "./asset/AStepInABetterWorld/storyboard2.jpg"],
       link: "https://youtu.be/eLX5izQ_IFc?si=azprGXkD79mQjrq7"
+    },
+    {
+      id: 2,
+      title: "Teaser Rock En Seine 2026",
+      description: "Vidéo teaser réalisée en groupe de 3 étudiants. L'objectif était de réaliser une vidéo afin de mettre en valeur l'édition 2026 de Rock En Seine pour donner envie en personne d'y aller, le tout à partir d'une nouveau Direction Artistique",
+      type: "projet étudiant",
+      secteurs: ["production vidéo", "communication"],
+      infos: ["Premiere Pro", "After Effects", "Photoshop"],
+      images: ["./asset/TeaserRockEnSeine2026/cover.jpg"],
+      link: "https://youtu.be/MSrl82PbXIU?si=A5AINr7O2XlbFU8F"
     }
   ]
 };
