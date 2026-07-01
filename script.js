@@ -53,3 +53,32 @@ if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
     }
   });
 }
+
+const video = document.getElementById('animVideo');
+const preloader = document.getElementById('preloader');
+
+if (preloader) {
+    if (sessionStorage.getItem('animationJouee') === 'true') {
+        document.body.classList.remove('no-scroll');
+        document.body.classList.add('video-ended');
+        preloader.remove();
+    } else {
+        if (video) {
+            const anticipation = 1; 
+            let transitionDeclenchee = false;
+
+            video.addEventListener('timeupdate', () => {
+                if (!transitionDeclenchee && video.duration > 0 && (video.duration - video.currentTime) <= anticipation) {
+                    transitionDeclenchee = true;
+                    preloader.style.opacity = '0';
+                    document.body.classList.remove('no-scroll');
+                    document.body.classList.add('video-ended');
+                    sessionStorage.setItem('animationJouee', 'true');
+                    setTimeout(() => {
+                        preloader.remove();
+                    }, 400);
+                }
+            });
+        }
+    }
+}

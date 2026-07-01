@@ -3,16 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Malo Etchegoyen : Portfolio</title>
     <link rel="stylesheet" href="css/global.css" />
     <script src="script.js" defer></script>
     <meta name="description" content="Portfolio de Malo Etchegoyen.">
+     <link rel="icon" type="image/x-icon" href="/asset/avatar.png">
   </head>
-  <body>
+  <body class="no-scroll">
     <main>
+      <div id="preloader">
+        <video id="animVideo" autoplay muted playsinline>
+            <source src="asset/avatar.webm" type="video/webm">
+        </video>
+      </div>
       <span id="cursorFollower" class="cursorFollower"></span>
       <section class="hero-section"></section>
-      <section class="carousel-section"></section>
+      <section class="carousel-section" id="carousel-section"></section>
       <section class="list-section"></section>
       <section class="video-section"></section>
       <footer class="footer-section"></footer>

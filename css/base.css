@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   overflow-x: hidden;
@@ -17,11 +20,16 @@ body::before {
   opacity: 25%;
   background-repeat: repeat;
   background-size: 200px;
-  z-index: 999;
+  z-index: 9999;
   animation: mouvement-grain 0.4s infinite steps(10);
 }
 body::selection{
   background-color: rgb(141, 21, 21);
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
 }
 
 @keyframes mouvement-grain {
