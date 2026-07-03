@@ -2,6 +2,7 @@
   position: relative;
   height: 120vh;
   view-timeline-name: --hero-timeline;
+  
 }
 
 .hero__title {
@@ -11,8 +12,9 @@
   transform: translateX(-50%);
   font-size: clamp(3rem, 6vw + 1rem, 8rem);
   text-align: center;
-  color: var(--clr-white);
+  color: var(--clr-main);
   z-index: 2;
+  transition: color 1s linear;
 }
 
 .hero__sticky {
@@ -29,12 +31,13 @@
   cursor: pointer;
   width: 50px;
   height: 50px;
-  background-color: var(--clr-white);
+  background-color: var(--clr-main);
   border-radius: 50%;
   animation: move-and-grow linear forwards;
   animation-timeline: --hero-timeline;
   animation-range: exit 0% exit 100%;
   opacity: 0;
+  transition: background-color 1s linear;
 }
 
 .video-ended .hero__dot {

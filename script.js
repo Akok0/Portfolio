@@ -12,8 +12,8 @@ document.addEventListener("mousemove", (e) => {
 });
 
 function animateCursor() {
-  xp += (mouseX - xp) / 15;
-  yp += (mouseY - yp) / 15;
+  xp += (mouseX - xp) / 5;
+  yp += (mouseY - yp) / 5;
 
   if (cursorFollower) {
     cursorFollower.style.left = xp + "px";
@@ -82,3 +82,20 @@ if (preloader) {
         }
     }
 }
+
+const themeToggle = document.getElementById('themeToggle');
+
+  if (localStorage.getItem('theme') === 'light') {
+    themeToggle.checked = true;
+  }
+
+  themeToggle.addEventListener('change', () => {
+    if (themeToggle.checked) {
+      localStorage.setItem('theme', 'light');
+      console.log("light")
+    } else {
+      localStorage.setItem('theme', 'dark');
+            console.log("dark")
+
+    }
+  });

@@ -1,11 +1,12 @@
 .video{
-  color: var(--clr-white);
+  color: var(--clr-main);
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  transition: color 1s linear;
     .video__title {
                 font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
         }
@@ -47,9 +48,9 @@
                         justify-content: start;
                         flex: 1 1 auto;
                         padding: 0 2rem;
-                        background-color: var(--clr-black);
-                        border-right: solid 2px var(--clr-white);
-                        color: var(--clr-white);
+                        border-right: solid 2px var(--clr-main);
+                        color: var(--clr-main);
+                        transition:border-right 1s linear, color 1s linear;
                     }
                 }
     
@@ -58,7 +59,7 @@
                     height: 100%;
                     width: 100%;
                     aspect-ratio: 16/9;
-                    border: solid 2px var(--clr-white);
+                    border: solid 2px var(--clr-sec);
                     @media(min-width: 55em){
                         width: 0;
                         visibility: hidden;

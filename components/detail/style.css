@@ -4,13 +4,14 @@
   align-items: center;
   gap: 2rem;
   padding: 5rem 0;
-  color: var(--clr-white);
+  color: var(--clr-main);
   font-family: var(--ff-sec);
+  transition: color 1s linear;
   .detail__home {
     position: fixed;
     bottom: 1rem;
-    background-color: var(--clr-black);
-    border: solid 1px var(--clr-white);
+    background-color: var(--clr-sec);
+    border: solid 1px var(--clr-main);
     padding: 0.5rem 2.5rem;
     border-radius: 25px;
     opacity: 0.5;
@@ -19,6 +20,7 @@
     &:hover {
       opacity: 1;
     }
+    transition: color 1s linear, background-color 1s linear, border 1s linear;
   }
   .detail__title {
     text-align: center;
@@ -27,9 +29,10 @@
   }
   .detail__type {
     text-align: center;
-    border: solid 1px var(--clr-white);
+    border: solid 1px var(--clr-main);
     padding: 0 2rem;
     border-radius: 20px;
+    transition: border 1s linear;
   }
   .detail__description {
     text-align: center;
@@ -38,16 +41,17 @@
     font-size: 1.5rem;
   }
   .detail__btn {
-    background-color: var(--clr-white);
-    color: var(--clr-black);
+    background-color: var(--clr-main);
+    color: var(--clr-sec);
     width: 10rem;
     text-align: center;
     font-family: var(--ff-main);
     &:hover {
-      background-color: var(--clr-black);
-      color: var(--clr-white);
-      outline: solid 1px var(--clr-white);
+      background-color: var(--clr-sec);
+      color: var(--clr-main);
+      outline: solid 1px var(--clr-main);
     }
+    transition: color 1s linear, background-color 1s linear;
   }
   .detail__labels {
     display: flex;
@@ -58,9 +62,10 @@
     }
     .detail__label {
       text-align: center;
-      border: solid 1px var(--clr-white);
+      border: solid 1px var(--clr-main);
       padding: 0 2rem;
       border-radius: 20px;
+      transition: border 1s linear;
     }
   }
 .detail__images {

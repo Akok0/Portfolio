@@ -1,12 +1,21 @@
+body:has(#themeToggle:checked) {
+  --clr-main: var(--clr-dark);
+  --clr-sec: var(--clr-light);
+}
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   overflow-x: hidden;
-  background-color: var(--clr-black);
+  background-color: var(--clr-sec);
   font-family: var(--ff-main);
+  color: var(--clr-main);
+  transition: color 0.8s ease-in-out;
 }
+
 body::before {
   pointer-events: none;
   content: '';
@@ -15,16 +24,75 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  opacity: 0.5;
+  opacity: 0.20; 
   background: url("../asset/bruit.png");
-  opacity: 25%;
   background-repeat: repeat;
   background-size: 200px;
   z-index: 9999;
   animation: mouvement-grain 0.4s infinite steps(10);
 }
-body::selection{
+
+body::selection {
   background-color: rgb(141, 21, 21);
+}
+
+.bg-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg-light {
+  background-color: var(--clr-light);
+  z-index: -1;
+  clip-path: circle(150% at 100% 0%);
+  transition: clip-path 0.8s ease-in-out;
+}
+
+.bg-dark {
+  background-color: var(--clr-dark);
+  z-index: -1;
+  clip-path: circle(150% at 100% 0%);
+  transition: clip-path 0.8s ease-in-out;
+}
+
+.bg-light {
+  background-color: var(--clr-light);
+  z-index: -2;
+  clip-path: circle(0% at 100% 0%);
+  transition: clip-path 0s 0.8s; 
+}
+
+body:has(#themeToggle:checked) .bg-dark {
+  z-index: -2;
+  clip-path: circle(0% at 100% 0%);
+  transition: clip-path 0s 0.8s;
+}
+
+body:has(#themeToggle:checked) .bg-light {
+  z-index: -1;
+  clip-path: circle(150% at 100% 0%);
+  transition: clip-path 0.8s ease-in-out;
+}
+
+.hidden-checkbox {
+  display: none;
+}
+
+.toggle-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: var(--clr-main);
+  color: var(--clr-sec);
+  border-radius: 0 0 0 50px;
+  padding: 10px 20px;
+  transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
+  user-select: none;
+  z-index: 10;
 }
 
 .no-scroll {
@@ -48,7 +116,7 @@ body::selection{
 
 .cursorFollower {
   display: none;
-  background-color: var(--clr-white);
+  background-color: var(--clr-light);
   position: fixed;
   width: 2rem;
   height: 2rem;
@@ -58,7 +126,10 @@ body::selection{
   mix-blend-mode: difference;
   z-index: 999;
   pointer-events: none;
-  @media (hover: hover) and (pointer: fine){
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cursorFollower {
     display: block;
   }
 }

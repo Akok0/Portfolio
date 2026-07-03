@@ -1,8 +1,47 @@
 .carousel-section {
-  background-color: var(--clr-white);
-  background: linear-gradient(0deg, var(--clr-black) 0%, var(--clr-white) 30%);
   position: relative;
   padding: 5rem 0;
+  z-index: 1;
+  background-color: transparent; 
+  --clr-main: var(--clr-light);
+  --clr-sec: var(--clr-dark);
+  color: var(--clr-main);
+  transition: color 0.8s ease-in-out;
+}
+
+body:has(#themeToggle:checked) .carousel-section {
+  --clr-main: var(--clr-dark);
+  --clr-sec: var(--clr-light);
+}
+
+.carousel-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(0deg, var(--clr-dark) 0%, var(--clr-light) 30%);
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+.carousel-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: linear-gradient(0deg, var(--clr-light) 0%, var(--clr-dark) 30%);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Transitions au clic (Croisement des opacités) */
+body:has(#themeToggle:checked) .carousel-section::before {
+  opacity: 0;
+  z-index: -2;
+}
+
+body:has(#themeToggle:checked) .carousel-section::after {
+  opacity: 1;
+  z-index: -1;
 }
 
 .carousel-section__text{
@@ -13,19 +52,21 @@
   text-align: center;
 
   .carousel-section__title {
-    color: var(--clr-black);
+    color: var(--clr-sec);
     font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
+    transition: color 1s linear;
   }
   .carousel-section__btn {
     padding: .5rem ;
     text-transform: uppercase;
     color: var(--clr-white);
     font-size: 1rem;
-    background-color: var(--clr-black);
+    background-color: var(--clr-sec);
+    transition: background-color 1s linear;
     &:hover{
-      color: var(--clr-black);
-      background-color: var(--clr-white);
-      border: solid 2px var(--clr-black);
+      color: var(--clr-sec);
+      background-color: var(--clr-main);
+      border: solid 2px var(--clr-sec);
     }
   }
 }
@@ -70,7 +111,7 @@
   left: 50%;
   width: 80%;
   aspect-ratio: 1; 
-  background: var(--clr-black);
+  background: var(--clr-sec);
   border-radius: 50%; 
   transform: translate(-50%, 20px) rotateX(90deg);
   
@@ -78,7 +119,7 @@
   opacity: 0.5;
   pointer-events: none;
   
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, background 1s linear;
 }
 .carousel__item::before {
   content: "";

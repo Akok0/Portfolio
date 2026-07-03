@@ -1,11 +1,12 @@
 .dev {
-  color: var(--clr-white);
+  color: var(--clr-main);
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  transition: color 1s linear;
   .dev__title {
     font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
     z-index: 2;
@@ -24,7 +25,8 @@
       justify-content: center;
       gap: 1rem;
       padding: 2rem 0;
-      border-bottom: solid 1px var(--clr-white);
+      border-bottom: solid 1px var(--clr-main);
+      transition: border-bottom 1s linear;
       @media (min-width: 55em) {
         grid-template-columns: repeat(3, 1fr);
       }
@@ -66,7 +68,7 @@
         aspect-ratio: 16/9;
       }
       .project__menu-floating {
-        border: solid 2px var(--clr-white);
+        border: solid 2px var(--clr-main);
         border-radius: 2px;
         position: fixed;
         top: 0;
@@ -77,7 +79,7 @@
         pointer-events: none;
         opacity: 0;
         visibility: hidden;
-        transition: opacity 0.5s ease, visibility 0s 0.5s;
+        transition: opacity 0.5s ease, visibility 0s 0.5s, color 1s linear;
         .floating__img {
           object-fit: cover;
           width: 100%;
@@ -90,7 +92,7 @@
         visibility: visible;
       }
       .project__desc {
-          font-family: var(--ff-sec);
+          font-family: var(--ff-sec );
 
       }
       .project__info {

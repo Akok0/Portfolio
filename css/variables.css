@@ -4,7 +4,9 @@
 :root{
     --ff-main : 'Tanker', 'Impact', sans-serif;
     --ff-sec : 'Sora', 'Impact', sans-serif;
-    --clr-black: #0e0e0e;
-    --clr-white: #f4f7e8;
 
+    --clr-light: #f4f7e8;
+    --clr-dark: #0e0e0e;
+    --clr-main: var(--clr-light);
+    --clr-sec: var(--clr-dark);
 }
