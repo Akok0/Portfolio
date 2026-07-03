@@ -33,7 +33,6 @@ body:has(#themeToggle:checked) .carousel-section {
   transition: opacity 1s ease-in-out;
 }
 
-/* Transitions au clic (Croisement des opacités) */
 body:has(#themeToggle:checked) .carousel-section::before {
   opacity: 0;
   z-index: -2;
