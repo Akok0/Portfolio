@@ -85,17 +85,34 @@ if (preloader) {
 
 const themeToggle = document.getElementById('themeToggle');
 
-  if (localStorage.getItem('theme') === 'light') {
-    themeToggle.checked = true;
-  }
+const themeAnim = lottie.loadAnimation({
+  container: document.getElementById('theme-icon-container'),
+  renderer: 'svg',
+  loop: false,
+  autoplay: false,
+  path: 'asset/light.json'
+});
 
-  themeToggle.addEventListener('change', () => {
-    if (themeToggle.checked) {
-      localStorage.setItem('theme', 'light');
-      console.log("light")
-    } else {
-      localStorage.setItem('theme', 'dark');
-            console.log("dark")
-
-    }
+if (localStorage.getItem('theme') === 'light') {
+  themeToggle.checked = true;
+  
+  themeAnim.addEventListener('DOMLoaded', () => {
+    themeAnim.goToAndStop(themeAnim.totalFrames - 1, true);
   });
+}
+
+themeToggle.addEventListener('change', () => {
+  if (themeToggle.checked) {
+    localStorage.setItem('theme', 'light');
+    console.log("light");
+    
+    themeAnim.setDirection(1);
+    themeAnim.play();
+  } else {
+    localStorage.setItem('theme', 'dark');
+    console.log("dark");
+    
+    themeAnim.setDirection(-1);
+    themeAnim.play();
+  }
+});
